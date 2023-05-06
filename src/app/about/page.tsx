@@ -32,11 +32,7 @@ const About = () => {
     >
       <div className="flex flex-col md:flex-row md:gap-[80px]">
         <motion.div variants={item} className="max-w-[450px]">
-          <Image
-            src={window.innerWidth > 450 ? profilePicture : profilePicture}
-            alt=""
-            className=" rounded-2xl"
-          />
+          <Image src={profilePicture} alt="" className=" rounded-2xl" />
         </motion.div>
 
         <motion.span variants={item} className="text-md text-secondary mt-[40px] md:mt-0">
