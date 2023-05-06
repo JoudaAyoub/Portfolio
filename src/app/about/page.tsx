@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import profilePicture from "/public/profilePicture.jpg";
+import profilePicture from "/public/profilepicture.jpg";
 import metaIcon from "/public/meta.svg";
 import googlesvg from "/public/google.svg";
 import Image from "next/image";
