@@ -3,8 +3,8 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="mt-[120px] pb-[120px] flex flex-col ">
-      <span className="mx-auto my-[120px] mt-[65px]  font-semibold text-[32px] md:text-[64px] before:content-footerfirst  before:scale-50 md:before:scale-100 before:absolute relative before:-left-10  md:before:top-1 before:z-[-1] after:content-footerlast  after:absolute after:scale-50 md:after:scale-100  after:-right-4  after:top-2  after:z-[2]">
-        Let’s Work Together
+      <span className="mx-auto my-[120px] mt-[65px]  font-semibold text-[32px] md:text-[64px] before:content-footerfirst  before:scale-50 md:before:scale-100 before:absolute relative before:-left-10  md:before:top-1 before:z-[-1] after:content-footerlast  after:absolute after:scale-50 md:after:scale-100  after:-right-4  after:top-2  after:z-[2] cursor-pointer">
+        <a href="mailto:ayoubjoudaw@gmail.com">Let’s Work Together</a>
       </span>
       <ul className="flex gap-3 mx-auto font-medium ">
         <li className="leading-[40px] hover:-translate-y-0.5 hover:text-secondary transition ease-in-out cursor-pointer">
