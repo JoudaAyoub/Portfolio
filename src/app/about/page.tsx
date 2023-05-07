@@ -31,8 +31,8 @@ const About = () => {
       className="mt-[60px] md:mt-[120px] mx-5 md:mx-0"
     >
       <div className="flex flex-col md:flex-row md:gap-[80px]">
-        <motion.div variants={item} className="max-w-[450px]">
-          <Image src={profilePicture} alt="" className=" rounded-2xl" />
+        <motion.div variants={item} className="max-w-[400px]">
+          <Image src={profilePicture} alt="" className=" rounded-2xl" placeholder="blur" priority />
         </motion.div>
 
         <motion.span variants={item} className="text-md text-secondary mt-[40px] md:mt-0">

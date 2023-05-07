@@ -12,7 +12,7 @@ export default function HeroSection({}) {
       transition={{ ease: easeInOut }}
       className="w-full relative flex justify-center mt-[90px]"
     >
-      <h1 className="relative font-semibold  text-[55px] z-[2] leading-[64px]  md:text-[120px] md:leading-[104px] tracking-tighter select-none ">
+      <h1 className="relative font-semibold  text-[65px]  z-[2] leading-[64px] sm:text-[90px] sm:leading-[80px] md:text-[100px] md:leading-[80px] lg:text-[120px] lg:leading-[104px] tracking-tighter select-none ">
         <span className="after:content-foodicon  after:absolute relative md:after:scale-100 after:scale-50 after:-right-10 after:-top-5 md:after:top-2 after:z-[-1]">
           Curious,
         </span>

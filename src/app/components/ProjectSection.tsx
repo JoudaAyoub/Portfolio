@@ -44,7 +44,9 @@ const ProjectSection = (props: ProjectSectionProps) => {
                 <div
                   key={index}
                   className={`${
-                    (index + 1) % 3 === 0 ? "col-span-4 row-span-4" : "col-span-2 row-span-4"
+                    (index + 1) % 3 === 0
+                      ? "col-span-4 row-span-4"
+                      : "col-span-4 md:col-span-2 row-span-4"
                   }`}
                 >
                   <ProjectCard project={project} />

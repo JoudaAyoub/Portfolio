@@ -1,15 +1,18 @@
 import React from "react";
-import serviceImg from "public/services.png";
-import mobileserviceImg from "public/mobileservice.svg";
+// import serviceImg from "/public/services.png";
+// import mobileserviceImg from "/public/mobileservice.svg";
+import mobileserviceImg from "/public/service2.png";
+import serviceImg from "/public/service1.png";
+
 import Image from "next/image";
 const ServicesSection = () => {
   return (
-    <div className="my-[60px] md:my-[120px]  flex flex-col">
+    <div className="my-[60px] md:my-[120px]  flex flex-col ">
       <span className="mx-auto mt-[65px]  font-semibold text-[32px] md:text-[64px] before:content-servicesfirst  before:scale-50 md:before:scale-100 before:absolute relative before:-left-7  md:before:top-0 before:z-[-1] after:content-serviceslast  after:absolute after:scale-50 md:after:scale-100  after:-right-6  after:top-0   after:z-[2]">
         Services
       </span>
-      <div className="service-card flex flex-col-reverse md:flex-row gap-[69px] mt-[60px] md:mt-[120px] mx-5">
-        <div className="flex flex-col max-w-[342px]">
+      <div className="service-card flex flex-col-reverse items-center lg:flex-row gap-[69px] mt-[60px] md:mt-[120px] mx-5">
+        <div className="flex flex-col sm:max-w-[500px] lg:max-w-[342px]">
           <div className="text-sm font-medium">WEB DEVELOPMENT</div>
           <div className="text-[28px] font-semibold leading-[30px] mt-5">
             Building tailored Web solutions for your digital growth.
@@ -25,11 +28,12 @@ const ServicesSection = () => {
         <Image
           src={serviceImg}
           alt=""
-          className="transition ease-in-out md:max-w-fit hover:rotate-2"
+          className="transition ease-in-out md:max-w-fit hover:rotate-2 max-h-[278px]"
+          placeholder="blur"
         />
       </div>
-      <div className="service-card flex flex-col-reverse md:flex-row gap-[69px] mt-[28px] md:mt-[120px] mx-5">
-        <div className="flex flex-col max-w-[342px]">
+      <div className="service-card flex flex-col-reverse items-center lg:flex-row gap-[69px] mt-[28px] md:mt-[120px] mx-5">
+        <div className="flex flex-col  sm:max-w-[500px] lg:max-w-[342px]">
           <div className="text-sm font-medium">MOBILE DEVELOPMENT</div>
           <div className="text-[28px] font-semibold leading-[30px] mt-5">
             Innovative Mobile Solutions for Your Business Needs
@@ -41,10 +45,12 @@ const ServicesSection = () => {
           </div>
         </div>
         {/* // image */}
+
         <Image
           src={mobileserviceImg}
           alt=""
-          className="transition ease-in-out hover:-rotate-2 md:max-w-fit"
+          className="transition ease-in-out hover:-rotate-2 md:max-w-fit max-h-[278px]"
+          placeholder="blur"
         />
       </div>
     </div>
