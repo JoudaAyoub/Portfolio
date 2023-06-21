@@ -8,9 +8,13 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Ayoub Jouda - ",
   description: "Ayoub Jouda's Personal Website",
-
   icons: {
     icon: { url: "/servicesfirst.svg", type: "image/svg+xml" },
+  },
+  openGraph: {
+    title: 'Ayoub Jouda -',
+    description: "Ayoub Jouda's Personal Website",
+    images: '/portfolio.png',
   },
 };
 
