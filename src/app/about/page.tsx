@@ -28,7 +28,7 @@ const About = () => {
       variants={container}
       initial="hidden"
       animate="show"
-      className="mt-[60px] md:mt-[120px] mx-5 "
+      className="mt-[60px] md:mt-[120px]  max-w-[1000px]  mx-auto"
     >
       <div className="flex flex-col md:flex-row lg:gap-[80px]  md:gap-[40px]">
         <motion.div variants={item} className="max-w-[400px]">

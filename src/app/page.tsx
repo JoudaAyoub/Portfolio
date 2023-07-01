@@ -12,7 +12,7 @@ export default async function Home() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}
-      className="w-full h-full "
+      className="w-full h-full max-w-[1000px]  mx-auto"
     >
       <HeroSection />
       <ProjectSection />

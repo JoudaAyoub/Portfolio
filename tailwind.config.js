@@ -16,6 +16,8 @@ module.exports = {
       headline: "#212121",
       subtext: "#A9A8A8",
       tech: "#4E4E4E",
+      amber: "#FFB800",
+      darkamber: "#FFA000",
     },
     fontFamily: {
       generalsans: ["General Sans"],
