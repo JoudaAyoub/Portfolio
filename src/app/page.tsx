@@ -4,6 +4,11 @@ import HeroSection from "./components/HeroSection";
 import ProjectSection from "./components/ProjectSection";
 import ServicesSection from "./components/ServicesSection";
 import Footer from "./components/Footer";
+import Hotjar from '@hotjar/browser';
+const siteId = 3587970;
+const hotjarVersion = 6;
+
+Hotjar.init(siteId, hotjarVersion);
 
 export default async function Home() {
   return (
