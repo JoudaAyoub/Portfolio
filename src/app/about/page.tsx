@@ -103,7 +103,7 @@ const About = () => {
           >
             <div className="text-[26px] font-semibold">Experience</div>
             <div className="mt-[24px]">
-              <span className="font-medium">FreeLancer</span> · Sep 2022 - present · Full-stack
+              <span className="font-medium">NOTAMⓇ Agency</span> · Sep 2022 - present · Full-stack
               Web/Mobile Developer
             </div>
             <div className="mt-[40px]">
@@ -119,7 +119,7 @@ const About = () => {
           <div className="text-[26px] text-secondary font-semibold">Skills</div>
           <div className="md:mt-6 mt-[32px]">
             <div className="font-medium text-tech">Languages</div>
-            <div className="text-secondary mt-[8px]">Javascript, Typescript, Java, SQL.</div>
+            <div className="text-secondary mt-[8px]">Javascript, Typescript, SQL.</div>
           </div>
           <div className="md:mt-6 mt-[24px]">
             <div className="font-medium text-tech">Technologies</div>

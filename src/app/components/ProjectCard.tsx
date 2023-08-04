@@ -15,7 +15,7 @@ const ProjectCard = ({ project }: { project: any }) => {
           width={0}
           height={0}
           sizes="100vw"
-          className={` rounded-[10px] w-full max-h-[700px] object-fill drop-shadow-2xl select-none`}
+          className={` rounded-[10px] w-full max-h-[700px] min-h-[258px] object-fill drop-shadow-2xl select-none`}
           src={project.imageUrl}
           placeholder="blur"
           blurDataURL={project.imageUrl}
