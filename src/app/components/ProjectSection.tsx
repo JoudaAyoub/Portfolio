@@ -35,7 +35,6 @@ async function getProjects() {
 
 const ProjectSection = (props: ProjectSectionProps) => {
   const projects = use(getProjects()) as Project[];
-  console.log(projects)
   const temp = projects[2];
   projects[2] = projects[3];
   projects[3] = temp;
