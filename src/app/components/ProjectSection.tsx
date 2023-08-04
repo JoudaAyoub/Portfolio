@@ -35,6 +35,10 @@ async function getProjects() {
 
 const ProjectSection = (props: ProjectSectionProps) => {
   const projects = use(getProjects()) as Project[];
+  console.log(projects)
+  const temp = projects[2];
+  projects[2] = projects[3];
+  projects[3] = temp;
   return (
     <div className="mx-5">
       <div className="mt-[150px]  justify-center  md:flex-row items-center">
@@ -44,7 +48,7 @@ const ProjectSection = (props: ProjectSectionProps) => {
                 <div
                   key={index}
                   className={`${
-                    (index + 1) % 3 === 0
+                    index  === 2
                       ? "col-span-4 row-span-4"
                       : "col-span-4 md:col-span-2 row-span-4"
                   }`}
