@@ -5,7 +5,7 @@ import ProjectSection from "./components/ProjectSection";
 import ServicesSection from "./components/ServicesSection";
 import Footer from "./components/Footer";
 import Hotjar from '@hotjar/browser';
-const siteId = 3587970;
+const siteId = 3674903;
 const hotjarVersion = 6;
 
 Hotjar.init(siteId, hotjarVersion);
