@@ -6,6 +6,10 @@ import googlesvg from "/public/google.svg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
+import {BiLogoJava, BiLogoReact, BiLogoNodejs, BiLogoPostgresql} from 'react-icons/bi'
+import {SiAmazonaws, SiDocker, SiGit, SiJavascript, SiMongodb, SiMysql, SiNestjs, SiNextdotjs, SiPrisma, SiSpring, SiTailwindcss, SiTypescript} from 'react-icons/si'
+import {TbBrandReactNative} from 'react-icons/tb'
+
 const About = () => {
   const container = {
     hidden: { opacity: 0 },
@@ -119,13 +123,27 @@ const About = () => {
           <div className="text-[26px] text-secondary font-semibold">Skills</div>
           <div className="md:mt-6 mt-[32px]">
             <div className="font-medium text-tech">Languages</div>
-            <div className="text-secondary mt-[8px]">Javascript, Typescript, SQL.</div>
+            <div className="text-secondary mt-[8px] flex gap-2"><SiJavascript size={40}/> <SiTypescript size={40}/> <BiLogoJava size={40}/> 
+            </div>
           </div>
           <div className="md:mt-6 mt-[24px]">
             <div className="font-medium text-tech">Technologies</div>
-            <div className="text-secondary mt-[8px]">
-              ReactJs, NextJs, React Native, NodeJs, NestJs, Prisma, TailwindCss, MySql, Postgresql,
-              MongoDb, Firebase, Git, Docker.
+            <div className="text-secondary mt-[8px] flex flex-wrap gap-2">
+              <BiLogoReact size={40}/> 
+              <SiNextdotjs size={40}/>
+              <TbBrandReactNative size={40}/>
+              <BiLogoNodejs size={40}/>
+              <SiNestjs size={40}/>
+              <SiSpring size={40}/>
+              <SiPrisma size={40}/>
+              <SiTailwindcss size={40}/>
+              <SiMysql size={40}/>
+              <BiLogoPostgresql size={40}/>
+              <SiMongodb size={40}/>
+              <SiGit size={40}/>
+              <SiDocker size={40}/>
+              <SiAmazonaws size={40}/>
+            
             </div>
           </div>
         </motion.div>
