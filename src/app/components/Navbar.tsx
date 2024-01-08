@@ -1,10 +1,10 @@
-"use client";
-import React, { useState } from "react";
-import { motion } from "framer-motion";
-import { usePathname } from "next/navigation";
-import menuSvg from "/public/menu.svg";
-import Image from "next/image";
-import Link from "next/link";
+'use client';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
+import menuSvg from '/public/menu.svg';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const variantsli = {
   open: {
@@ -37,75 +37,78 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <header className="max-w-[1000px] h-[54px] mx-auto">
-      <nav className="flex items-center justify-between w-full h-full mt-5 text-secondary ">
-        <Link href={"/"} className="mx-3 font-medium cursor-pointer text-md ">
+    <header className='mx-auto h-[54px] max-w-[1000px]'>
+      <nav className='mt-5 flex h-full w-full items-center justify-between text-second '>
+        <Link
+          href={'/'}
+          className='text-md mx-3 cursor-pointer font-medium '
+        >
           Ayoub jouda
         </Link>
-        <ul className="hidden gap-8 mx-3 text-sm font-medium md:flex ">
+        <ul className='mx-3 hidden gap-8 text-sm font-medium md:flex '>
           <Link
-            href={"/"}
+            href={'/'}
             className={`${
-              pathname !== "/" ? "text-subtext" : ""
-            } hover:-translate-y-0.5 hover:text-secondary transition ease-in-out cursor-pointer`}
+              pathname !== '/' ? 'text-subtext' : ''
+            } cursor-pointer transition ease-in-out hover:-translate-y-0.5 hover:text-second`}
           >
             Work
           </Link>
           <Link
-            href={"/about"}
+            href={'/about'}
             className={`${
-              pathname !== "/about" ? "text-subtext" : ""
-            } hover:-translate-y-0.5 hover:text-secondary transition ease-in-out cursor-pointer`}
+              pathname !== '/about' ? 'text-subtext' : ''
+            } cursor-pointer transition ease-in-out hover:-translate-y-0.5 hover:text-second`}
           >
             About
           </Link>
-          <li className="text-subtext hover:-translate-y-0.5 hover:text-secondary transition ease-in-out cursor-pointer">
+          <li className='cursor-pointer text-subtext transition ease-in-out hover:-translate-y-0.5 hover:text-second'>
             <a
-              href="https://drive.google.com/file/d/1QbHja6Z71g4nW7Wmwv7XRcHG8ty_jrEI/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://drive.google.com/file/d/1QbHja6Z71g4nW7Wmwv7XRcHG8ty_jrEI/view?usp=sharing'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               Resume
             </a>
           </li>
-          <li className="text-subtext hover:-translate-y-0.5 hover:text-secondary transition ease-in-out cursor-pointer">
-            <a href="mailto:ayoubjoudaw@gmail.com">Contact</a>
+          <li className='cursor-pointer text-subtext transition ease-in-out hover:-translate-y-0.5 hover:text-second'>
+            <a href='mailto:ayoubjoudaw@gmail.com'>Contact</a>
           </li>
         </ul>
-        <div className="relative flex md:hidden">
+        <div className='relative flex md:hidden'>
           <motion.div
-            className={` absolute top-8 right-6 border-stroke border bg-white w-[208px] z-10 rounded-tr-[10px] rounded-tl-[30px] rounded-b-[30px] h-[254px] md:hidden overflow-hidden ${
-              navState ? "" : "hidden"
+            className={` absolute right-6 top-8 z-10 h-[254px] w-[208px] overflow-hidden rounded-b-[30px] rounded-tl-[30px] rounded-tr-[10px] border border-stroke bg-white md:hidden ${
+              navState ? '' : 'hidden'
             } `}
-            animate={navState ? "open" : "closed"}
+            animate={navState ? 'open' : 'closed'}
             variants={variants}
           >
             <motion.ul
               variants={variantss}
-              className="flex flex-col items-center justify-center h-full gap-8 text-sm font-medium"
+              className='flex h-full flex-col items-center justify-center gap-8 text-sm font-medium'
             >
               <motion.li variants={variantsli}>
                 <Link
-                  href={"/"}
+                  href={'/'}
                   onClick={() => {
                     setNavState(!navState);
                   }}
                   className={`${
-                    pathname !== "/" ? "text-subtext" : ""
-                  } hover:-translate-y-0.5 hover:text-secondary transition ease-in-out cursor-pointer`}
+                    pathname !== '/' ? 'text-subtext' : ''
+                  } cursor-pointer transition ease-in-out hover:-translate-y-0.5 hover:text-secondary`}
                 >
                   Work
                 </Link>
               </motion.li>
               <motion.li variants={variantsli}>
                 <Link
-                  href={"/about"}
+                  href={'/about'}
                   onClick={() => {
                     setNavState(!navState);
                   }}
                   className={`${
-                    pathname !== "/about" ? "text-subtext" : ""
-                  } hover:-translate-y-0.5 hover:text-secondary transition ease-in-out cursor-pointer`}
+                    pathname !== '/about' ? 'text-subtext' : ''
+                  } cursor-pointer transition ease-in-out hover:-translate-y-0.5 hover:text-secondary`}
                 >
                   About
                 </Link>
@@ -113,29 +116,29 @@ const Navbar = () => {
 
               <motion.li
                 variants={variantsli}
-                className="text-subtext hover:-translate-y-0.5 hover:text-secondary transition ease-in-out cursor-pointer"
+                className='cursor-pointer text-subtext transition ease-in-out hover:-translate-y-0.5 hover:text-secondary'
               >
                 <a
-                  href="https://drive.google.com/file/d/1QbHja6Z71g4nW7Wmwv7XRcHG8ty_jrEI/view?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href='https://drive.google.com/file/d/1zPlVNFYdde0dyzpbtXyFKzppHfZBHJJ_/view?usp=sharing'
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   Resume
                 </a>
               </motion.li>
               <motion.li
                 variants={variantsli}
-                className="text-subtext hover:-translate-y-0.5 hover:text-secondary transition ease-in-out cursor-pointer overflow-hidden"
+                className='cursor-pointer overflow-hidden text-subtext transition ease-in-out hover:-translate-y-0.5 hover:text-secondary'
               >
-                <a href="mailto:ayoubjoudaw@gmail.com">Contact</a>
+                <a href='mailto:ayoubjouda@hotmail.fr'>Contact</a>
               </motion.li>
             </motion.ul>
           </motion.div>
 
           <Image
-            className="mx-3 cursor-pointer md:hidden"
+            className='mx-3 cursor-pointer md:hidden'
             src={menuSvg}
-            alt="menuIcon"
+            alt='menuIcon'
             onClick={() => setNavState(!navState)}
           />
         </div>

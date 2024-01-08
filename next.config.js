@@ -2,16 +2,16 @@
 const nextConfig = {
   experimental: {
     appDir: true,
-    esmExternals: "loose",
+    esmExternals: 'loose',
   },
   images: {
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "cdn.sanity.io",
+        protocol: 'https',
+        hostname: 'cdn.sanity.io',
       },
     ],
-    formats: ["image/avif", "image/webp"],
+    formats: ['image/avif', 'image/webp'],
   },
 };
 

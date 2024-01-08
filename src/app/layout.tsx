@@ -1,15 +1,15 @@
-import Navbar from "./components/Navbar";
-import "./globals.css";
-import { Inter } from "next/font/google";
-import Head from "next/head";
+import Navbar from './components/Navbar';
+import './globals.css';
+import { Inter } from 'next/font/google';
+import Head from 'next/head';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: "Ayoub Jouda - ",
+  title: 'Ayoub Jouda - ',
   description: "Ayoub Jouda's Personal Website",
   icons: {
-    icon: { url: "/servicesfirst.svg", type: "image/svg+xml" },
+    icon: { url: '/servicesfirst.svg', type: 'image/svg+xml' },
   },
   openGraph: {
     title: 'Ayoub Jouda -',
@@ -18,10 +18,14 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} ` }>
+    <html lang='en'>
+      <body className={`${inter.className} no-scrollbar`}>
         <Navbar />
         {children}
       </body>
