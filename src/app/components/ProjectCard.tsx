@@ -144,7 +144,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
                   <motion.div
                     variants={item}
                     key={index}
-                    className='flex flex-col items-start'
+                    className='flex flex-col items-start md:px-6 md:drop-shadow-xl'
                   >
                     <Image
                       width={0}
