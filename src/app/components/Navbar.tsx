@@ -64,7 +64,7 @@ const Navbar = () => {
           </Link>
           <li className='cursor-pointer text-subtext transition ease-in-out hover:-translate-y-0.5 hover:text-second'>
             <a
-              href='https://drive.google.com/file/d/1QbHja6Z71g4nW7Wmwv7XRcHG8ty_jrEI/view?usp=sharing'
+              href='https://drive.google.com/file/d/1zPlVNFYdde0dyzpbtXyFKzppHfZBHJJ_/view?usp=sharing'
               target='_blank'
               rel='noopener noreferrer'
             >
