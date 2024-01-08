@@ -57,6 +57,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
                 src={project?.imageUrl}
                 placeholder='blur'
                 blurDataURL={project?.imageUrl}
+                priority
                 alt='project-card'
               />
             </div>
@@ -153,6 +154,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
                       src={picture?.imageUrl}
                       placeholder='blur'
                       blurDataURL={picture?.imageUrl}
+                      priority
                       alt='project-card'
                     />
                   </motion.div>
